@@ -1,0 +1,12 @@
+# Site settings
+title: Catriona Munro
+email: catriona_munro[@]brown.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Catriona Munro. PhD candidate at Brown University
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://cmunro.github.io/" # the base hostname & protocol for your site
+twitter_username: CatMunro_
+github_username:  cmunro
+
+# Build settings
+markdown: kramdown
