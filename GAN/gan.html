@@ -17,7 +17,7 @@ This paper has been published in arxiv in 22nd Dec., meaning just 1 month before
 about this paper:<p>
 One of the main challenges in machine learning is real labeled data for training. Using synthetic images to train deep networks can somehow solve the problem.Using just synthetic images can be problematic, because what algorithm learn with this kind of data doesn't always cope with the real situation with real data, so the trained algorithm will fail in generalization, specially on real images.<p>
 To improve the performance for testing, this paper uses so-called "Simulated+Unsupervised" learning. In fact, they use Generative Adversarial Network in order to improve the generalization ability. In GANs, there are two competing neural networks, generator and discriminator, against each other to get better results. In more details, This "S+U" is nothing but combining real image data with annotated synthetic images.<p>
-<a href="#" class="image featured"><img src="https://github.com/rahimentezari/rahimentezari.github.io/tree/master/images/gan-gaze2.png" alt="" /></a>
+<a href="#" class="image featured"><img src="images/gan-gaze2.png" alt="" /></a>
   
   
 They called their network SimGAN. As you can see in the picture, there are Refiner(R) and Discriminator(D). The first one tries to minimize th e combination of a "local adversarial loss" and a "self-regularization term".<p>
