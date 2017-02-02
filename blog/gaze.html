@@ -9,23 +9,10 @@
 
 <h2>What is Gaze Estimation?</h2>
 
-<p>My master thesis was about Human Gaze Estimation and as Generative Adversarial Networks are becoming hot, I was wondering If I can use of GAN for Gaze Estimation. When searched, I found the following paper, which sounds interesting to me in this context: </p>
-
-<p>"Learning from Simulated and Unsupervised Images through Adversarial Training"<p>
-This paper has been published in arxiv in 22nd Dec., meaning just 1 month before. This paper arrives less than a month after the Apple said it would no longer ban employees from publishing research relating to artificial intelligence. This paper is done by vision expert Ashish Shrivastava and a team of engineers including Tomas Pfister, Oncel Tuzel, Wenda Wang, Russ Webb and Apple Director of Artificial Intelligence Research Josh Susskind  <p>
-
-about this paper:<p>
-One of the main challenges in machine learning is real labeled data for training. Using synthetic images to train deep networks can somehow solve the problem.Using just synthetic images can be problematic, because what algorithm learn with this kind of data doesn't always cope with the real situation with real data, so the trained algorithm will fail in generalization, specially on real images.<p>
-To improve the performance for testing, this paper uses so-called "Simulated+Unsupervised" learning. In fact, they use Generative Adversarial Network in order to improve the generalization ability. In GANs, there are two competing neural networks, generator and discriminator, against each other to get better results. In more details, This "S+U" is nothing but combining real image data with annotated synthetic images.<p>
-<a href="#" class="image featured"><img src="images/gan-gaze2.png" alt="" /></a> <p>
-  
-  
-They called their network SimGAN. As you can see in the picture, there are Refiner(R) and Discriminator(D). The first one tries to minimize th e combination of a "local adversarial loss" and a "self-regularization term".<p>
-- The discriminator network, D, classifies an image as real or refined. The adversarial loss fools this discriminator network.<p>
-- The self-regularization term minimizes the image difference between the synthetic and the refined images.<p>
-
-for more information, including implementation details, see  <a href="https://github.com/rahimentezari/simulated-unsupervised-tensorflow">here</a>, </p
-
+<p>The most important ways of non-verbal communication consist of facial expressions, hands position, gestures, and gaze. The last one plays a crucial role when people interact, as it is used to regulate the ﬂow of communication, monitor feedback, reﬂect cognitive activity, express emotions, and communicate the nature of the interpersonal relationship[1] .In general, gaze is a very strong indicator for subject attention process.
+In the recent years, as there is much rich information in non-verbal cues, there has been a growing interest from diverse domain on tools, which are able to retrieve the state of human.
+Appearance-based gaze estimation which does not need specific tools is a hot topic research in computer vision as it can be used for several application domains, including gaze-based human-computer interaction and visual behavior analysis[2]. 
+We now know that the desired gaze consists of two factors [3] i.e. the head pose and the eye locations. The estimation of these mentioned factors is often achieved using expensive or limiting hardware.Therefore, the problem is often simpliﬁed by either considering the head pose or the eye center locations as the only feature to understand the interest of a subject[4]<p>
 
 <h2>Applications</h2>
 </body>
